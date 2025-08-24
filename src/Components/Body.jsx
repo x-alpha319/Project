@@ -128,7 +128,6 @@ function Body() {
             </div>
           </div>
 
-          {/* Right Section */}
           <div className="grid grid-cols-1 gap-6">
             <div className="p-4 bg-white rounded-2xl border border-gray-200 shadow-md">
               <div className="flex justify-between items-center border-b border-gray-200 pb-3 mb-4">
@@ -203,7 +202,6 @@ function Body() {
         </div>
       </section>
 
-      {/* ✅ Carousel Section */}
       <section className="p-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
           <Carousel2 />

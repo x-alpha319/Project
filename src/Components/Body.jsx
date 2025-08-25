@@ -27,20 +27,6 @@ function Body() {
     },
   ];
 
-  const [current, setCurrent] = useState(0);
-
-  const prevSlide = () =>
-    setCurrent(current === 0 ? slides.length - 1 : current - 1);
-  const nextSlide = () =>
-    setCurrent(current === slides.length - 1 ? 0 : current + 1);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-    }, 3000);
-    return () => clearInterval(timer);
-  }, [slides.length]);
-
   return (
     <>
       <div className="p-2 border-b border-gray-300 mb-4 grid grid-cols-1 md:grid-cols-[1fr_auto] gap-4 items-center">
@@ -51,7 +37,7 @@ function Body() {
               className="flex items-center gap-2 hover:bg-gray-200 px-3 py-2 rounded cursor-pointer transition text-sm md:text-base"
             >
               <Icon size={18} />
-              <span className="hidden sm:inline">{label}</span>
+              <span>{label}</span>
             </div>
           ))}
         </div>

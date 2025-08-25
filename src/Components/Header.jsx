@@ -48,7 +48,7 @@ export default function Header() {
           <img
             src="./myxellia.png"
             alt="Myxellia"
-            className="h-8 w-auto object-contain sm:h-10 md:h-12"
+            className="h-8 w-auto object-contain sm:h-10 md:h-12 rounded"
           />
         </div>
 
@@ -70,7 +70,7 @@ export default function Header() {
                 aria-label={item.title}
               >
                 {item.icon}
-                <span className="hidden lg:inline">{item.title}</span>
+                {/* <span className="hidden lg:inline">{item.title}</span> */}
               </button>
               {/* Dropdown menu */}
               {!item.modal && !item.drawer && (

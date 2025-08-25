@@ -36,7 +36,7 @@ function Carousel() {
   }, [slides.length]);
 
   return (
-    <div className="relative w-[500px] h-45 mx-auto overflow-hidden rounded-2xl shadow-lg items-center">
+    <div className=" w-[500px] h-[180px] mx-auto overflow-hidden rounded-2xl shadow-lg items-center">
       <div
         className="flex transition-transform ease-out duration-500"
         style={{ transform: `translateX(-${current * 100}%)` }}
